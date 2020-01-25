@@ -1,0 +1,31 @@
+clc;
+close;
+
+n = input("Enter number of ROWS in a MATRIX     : ");
+m = input("Enter number of COLUMNS in a MATRIX  : ");
+disp("Enter elements in MATRIX A : ")
+ for i=1:n
+    for j=1:m
+       a(i,j) = input(""); 
+    end       
+ end
+ 
+ disp("Enter elements in MATRIX B : ")
+ for i=1:n 
+    for j=1:m
+       b(i,j) = input("");
+    end   
+ end
+ 
+ for i=1:n 
+    for j=1:m
+       c(i,j) = a(i,j) + b(i,j);
+    end    
+ end
+ 
+disp("MATRIX A ")
+disp(a)
+disp("MATRIX B")
+disp(b) 
+disp("RESULT OF MATRIX ADDITION C=A+B : ")
+disp(c) 
