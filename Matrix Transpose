@@ -1,0 +1,21 @@
+clc;
+close;
+
+n = input("Enter number of ROWS of a MATRIX     : ");
+m = input("Enter number of COLUMNS of a MATRIX  : ");
+disp("Enter elements in MATRIX A : ")
+ for i=1:n
+    for j=1:m
+       a(i,j) = input(""); 
+    end       
+ end
+ 
+ for i=1:n
+     for j=1:m
+      b(i,j) = a(j,i);
+     end    
+ end
+ disp("ORIGINAL MATRIX (before transpose) ")
+ disp(a)
+ disp("MATRIX AFTER TRANSPOSE")
+ disp(b)
